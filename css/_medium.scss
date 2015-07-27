@@ -1,0 +1,54 @@
+@media screen and (min-width: 560px) {
+
+.menu {
+	overflow: hidden;
+}
+
+.main-menu {
+	width: 58.333%;
+	float: right;
+	margin-right: 0;
+	padding: 1rem;
+
+	.item {
+		width: 100%;
+	}
+}
+
+.menu-nav {
+	width: 41.667%;
+	float: left;
+
+	img {
+		display: none;
+	}
+}
+
+.about {
+	width: 58.333%;
+	float: right;
+
+}
+
+.addresses {
+	width: 58.333%;
+	max-width: 475px;
+	padding: 0;
+	margin: 1rem;
+	float: right;
+}
+
+
+.js .nav-collapse {
+  display: inline-block;    
+}
+
+
+} //end of media query
+
+@media screen and (min-width: 650px) {
+	.nav-collapse ul {
+		width: 80%;
+		float: right;
+	}
+}

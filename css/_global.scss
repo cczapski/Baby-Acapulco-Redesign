@@ -1,0 +1,354 @@
+.container {
+	background: $green;
+}
+
+//HEADER----------------------------------------------------
+
+.header-nav {
+	background: $purple;
+	overflow: hidden;
+
+	p {
+		color: white;
+		font-weight: $bold;
+		font-size: 18px;
+		font-size: 1.125rem;
+		padding: 1rem;
+		display: inline-block;
+	}
+}
+
+.header-index, .header-lunch, .header-locations {
+
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+
+	h1 {
+		text-align: center;
+		padding-top: 13rem;
+		padding-bottom: 2rem;
+	}
+}
+
+.header-index {
+	background: $purple;
+	background: 
+		linear-gradient(
+		   rgba(135,34,141,0.3),
+		   rgba(135,34,141,0.3)
+		),
+		url("../images/restaurant_far_north.jpg");
+
+	background-size: cover;
+	background-position: center;
+}
+
+.header-lunch {
+	
+	background: 
+		linear-gradient(
+		   rgba(135,34,141,0.3),
+		   rgba(135,34,141,0.3)
+		),
+		url("../images/babyA_ceiling_hendrix.jpeg");
+
+	background-size: cover;
+	background-position: center;
+
+}
+
+.header-locations {
+	
+	background: 
+		linear-gradient(
+		   rgba(135,34,141,0.3),
+		   rgba(135,34,141,0.3)
+		),
+		url("../images/restaurant_collage.jpg");
+
+	background-size: cover;
+	background-position: center;
+
+}
+
+.sub-header {
+	background: $blue;
+	color: white;
+	text-align: center;
+}
+
+//CONTENT----------------------------------------------------
+
+.mid-content {
+	overflow: hidden;
+	background: white;
+}
+
+// INDEX PAGE
+
+.about {
+	background: white;
+	padding: 1rem;
+
+	h3 {
+		color: $pink;
+	}
+
+	p {
+		margin: 1rem;
+	}
+}
+
+// LOCATIONS PAGE
+
+.addresses {
+	padding: 1rem;
+	width: 90%;
+	margin: 0 auto;
+
+	img, .address-deats {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	img {
+		margin: 1rem 0.50rem;
+		width: 35%;
+		border-radius: 3px;
+		border-radius: 0.1875;
+	}
+
+	h5 {
+		color: $pink;
+		font-weight: $bold;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		color: $black;
+
+		&:hover {
+			font-weight: $bold;
+			color: $purple;
+		}
+	}
+
+}
+
+.iframe {
+	margin: 2rem;
+	border-radius: 3px;
+	border-radius: 0.1875rem;
+}
+
+// LUNCH PAGE
+
+.main-menu {
+	overflow: hidden;
+}
+
+.item {
+	width: 90%;
+	margin: 1rem auto;
+	overflow: hidden;
+	background: white;
+
+	.pink-box {
+		background: $pink;
+		border-radius: 3px;
+		border-radius: 0.1875rem;
+	}
+
+}
+
+.lighter-items {
+	background: $blue;
+	margin: 0.75rem 0;
+	clear: left;
+	border-radius: 3px;
+	border-radius: 0.1875rem;
+
+	h3 {
+		margin-left: 0.5rem;
+	}
+}
+
+.menu {
+	background: white;
+	padding-top: 1rem;
+	margin-top: 0.75rem;
+}
+
+.menu-nav {
+	background: white;
+	background-size: cover;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+	.menu-link {
+		background: $blue;
+		border-radius: 3px;
+		border-radius: 0.1875rem;
+		font-size: 30px;
+		font-weight: $light;
+		color: white;
+		margin: 1.5rem;
+
+		&:hover {
+			background: $pink;
+			cursor: pointer;
+			box-shadow: 3px 3px 3px $ltgrey;
+
+			a {
+				font-weight: $bold;
+			}
+		}
+	}
+
+	p, img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	p {
+		font-size: 20px;
+    	font-size: 1.25rem;
+	}
+
+	img {
+		width: 20%;
+		padding: 1rem 0 1rem 1rem;
+	}
+}
+
+.locations {
+	margin: 0.75rem 0;
+	padding: 1rem;
+	background: $blue;
+	overflow: hidden;
+
+	.center {
+		margin: 0 auto;
+		width: 90%;
+		overflow: hidden;
+	}
+
+// LOCATIONS ---------------------------------------------------
+
+	.location-bg {
+		color: white;
+		overflow: hidden;
+		float: left;
+		padding: 7rem 1rem 1rem 1rem;
+		margin: 1rem;
+		text-align: center;
+		min-width: 160px;
+		background: $purple;
+		border-radius: 3px;
+		border-radius: 0.1875rem;
+
+		h5 {
+			font-weight: $bold;
+			text-shadow: 2px 2px 2px $blue;
+
+			&:hover {
+				color: $purple;
+				text-shadow: 2px 2px 2px white;
+			}
+		}
+	}
+
+	.barton-springs {
+		@include overlay($purp-grad, $purp-grad, url("../images/barton_springs.jpg"));
+
+		&:hover {
+			background: url("../images/barton_springs.jpg");
+			background-size: cover;
+			color: $purple;
+			cursor: pointer;
+		}
+	} // end of barton springs
+
+	.arboretum {
+		@include overlay($purp-grad, $purp-grad, url("../images/arboretum.jpg"));
+
+		&:hover {
+			background: url("../images/arboretum.jpg");
+			background-size: cover;
+			color: $purple;
+			cursor: pointer;
+		}
+	} // end of arboretum
+
+	.far-north {
+		@include overlay($purp-grad, $purp-grad, url("../images/far_north.jpg"));
+
+		&:hover {
+			background: url("../images/far_north.jpg");
+			background-size: cover;
+			color: $purple;
+			cursor: pointer;
+		}
+	} // end of far north
+
+	.central {
+		@include overlay($purp-grad, $purp-grad, url("../images/central.jpg"));
+
+		&:hover {
+			background: url("../images/central.jpg");
+			background-size: cover;
+			color: $purple;
+			cursor: pointer;
+		}
+	} // end of central
+
+	.east-side {
+		@include overlay($purp-grad, $purp-grad, url("../images/east_side.jpg"));
+
+		&:hover {
+			background: url("../images/east_side.jpg");
+			background-size: cover;
+			color: $purple;
+			cursor: pointer;
+		}
+	} // end of east side
+
+
+} //end of locations
+
+// FOOTER --------------------------------------------------
+
+footer {
+	background: $purple;
+	color: white;
+	font-weight: $bold;
+	padding: 1rem;
+	margin-top: 0.75rem;
+	overflow: hidden;
+	width: 100%;
+
+	div {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+		text-align: right;
+	}
+
+	li {
+		padding: 0.75rem;
+
+		a {
+			font-weight: $medium;
+		}
+	}
+}
