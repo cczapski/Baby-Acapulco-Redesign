@@ -15,6 +15,6 @@ The majority of the work on this redesign was completed within one week, with up
 * Site Map
 * Sketched Wireframes 
 * Typgoraphy Exploration
-* Illustrator Mock Ups
-* HTML, CSS, SCSS Javascript
+* Photoshop Mock Ups
+* HTML, CSS, SCSS, Javascript
 * Responsive Web Design
